@@ -2,7 +2,7 @@
 Elasticsearch Callback for Keras
 
 1. Copy escallback.py script into the directory with your Keras-based application
-2. Make sure the elasticsearch.py library is installed
+2. Make sure the elasticsearch-py library is installed
 ```shell
 pip install elasticsearch
 ```
