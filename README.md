@@ -13,15 +13,15 @@ from elasticsearch import Elasticsearch
 from escallback import ElasticCallback
 
 es_notifier = ElasticCallback()
-es_notifier.configure(job_name='ERMnet1', es_client=Elasticsearch())
+es_notifier.configure(job_name='YOURJOBNAME', es_client=Elasticsearch())
 
 model.fit_generator(epochs=...,
-	generator=...,
-	steps_per_epoch=...,
-	validation_data=...,
-	validation_steps=...,
-	verbose=...,
-	callbacks=[es_notifier])
+		generator=...,
+		steps_per_epoch=...,
+		validation_data=...,
+		validation_steps=...,
+		verbose=...,
+		callbacks=[es_notifier])
 ```
 4. Load the visualizations and dashboard located in the /kibana folder into your Kibana installation. If you need a quick ELK (Elasticsearch-Logstash-Kibana) stack in Docker:
 ```shell
