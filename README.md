@@ -16,10 +16,10 @@ es_notifier = ElasticCallback()
 es_notifier.configure(job_name='ERMnet1', es_client=Elasticsearch())
 
 model.fit_generator(epochs=...,
-                        generator=...,
-                        steps_per_epoch=...,
-                        validation_data=...,
-                        validation_steps=...,
-                        verbose=...,
-                        callbacks=[es_notifier])
+					generator=...,
+					steps_per_epoch=...,
+					validation_data=...,
+					validation_steps=...,
+					verbose=...,
+					callbacks=[es_notifier])
 ```
