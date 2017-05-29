@@ -23,3 +23,7 @@ model.fit_generator(epochs=...,
 					verbose=...,
 					callbacks=[es_notifier])
 ```
+4. Load the visualizations and dashboard located in the /kibana folder into your Kibana installation. If you need a quick ELK (Elasticsearch-Logstash-Kibana) stack in Docker:
+```shell
+docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it --name elk sebp/elk
+```
